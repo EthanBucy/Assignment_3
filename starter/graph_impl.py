@@ -6,7 +6,7 @@ from typing import Dict, List
 
 try:
     from starter.graph_interfaces import IEdge, IGraph, IVertex
-except ModuleNotFoundError:  # pragma: no cover - fallback when run as a script
+except ModuleNotFoundError:  # Seems to only work with this try and except
     from graph_interfaces import IEdge, IGraph, IVertex
 
 

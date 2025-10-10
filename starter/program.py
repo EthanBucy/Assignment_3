@@ -7,7 +7,7 @@ from typing import Deque, List, Optional
 try:
     from starter.graph_impl import Edge, Graph, Vertex
     from starter.graph_interfaces import IGraph, IVertex
-except ModuleNotFoundError:  # pragma: no cover - fallback when run as a script
+except ModuleNotFoundError:  # Seems to only work with this try and except
     from graph_impl import Edge, Graph, Vertex
     from graph_interfaces import IGraph, IVertex
 
